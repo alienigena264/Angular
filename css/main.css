@@ -1,0 +1,28 @@
+.jumbotron{
+    background-color: #00B5C0;
+    color: black;
+}
+
+.footer{
+    padding: 10px 10px 0 10px;
+    background-color: #00B5C0;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.hotel-container {
+    padding: 10px;
+    flex: 1 150px;
+    /* Agrega el espaciado deseado */
+}
+
+.btn-reserva{
+    width: 100%;
+    background-color: #EFB810;
+    border-color: #EFB810;
+}
+
+.btn-reserva:hover{
+    background-color: #00B5C0;
+    color: black;
+    border-color: #00B5C0;
+}
