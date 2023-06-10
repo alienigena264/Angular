@@ -1,0 +1,19 @@
+{
+  "name": "angular",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto de nodeJs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alienigena264/Angular.git"
+  },
+  "author": "Jugol264",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alienigena264/Angular/issues"
+  },
+  "homepage": "https://github.com/alienigena264/Angular#readme"
+}
