@@ -1,28 +1,51 @@
-.jumbotron{
+.jumbotron {
     background-color: #00B5C0;
     color: black;
+    margin-top: 50px;
+    height: 125px;
+    text-align: left;
+    display: flex;
+    align-items: center;
 }
 
-.footer{
+.footer {
     padding: 10px 10px 0 10px;
     background-color: #00B5C0;
     margin-bottom: 0px;
     margin-top: 10px;
 }
+
 .hotel-container {
     padding: 10px;
     flex: 1 150px;
     /* Agrega el espaciado deseado */
 }
 
-.btn-reserva{
+.btn-reserva {
     width: 100%;
     background-color: #EFB810;
     border-color: #EFB810;
 }
 
-.btn-reserva:hover{
+.btn-reserva:hover {
     background-color: #00B5C0;
     color: black;
     border-color: #00B5C0;
+}
+
+.breadcrumb-Custom {
+    background-color: lightgray;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+.breadcrumb-no-link>a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.breadcrumb-no-link.active {
+    margin-right: 1rem;
 }
