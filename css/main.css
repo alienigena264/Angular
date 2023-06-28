@@ -60,3 +60,10 @@
 .footer-add-icon {
     font-size: x-large;
 }
+
+.btn-enviar{
+        background-color: #00B5C0;
+        border-color: #00B5C0;
+        display: flex;
+        align-items: center;
+}
