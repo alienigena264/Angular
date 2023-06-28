@@ -21,11 +21,6 @@
     /* Agrega el espaciado deseado */
 }
 
-.btn-reserva {
-    width: 100%;
-    background-color: #EFB810;
-    border-color: #EFB810;
-}
 
 .btn-reserva:hover {
     background-color: #00B5C0;
@@ -48,4 +43,20 @@
 
 .breadcrumb-no-link.active {
     margin-right: 1rem;
+}
+
+.footer-addres-icon{
+    padding-right: 10px;
+}
+
+.btn-reserva {
+    width: 100%;
+    background-color: #EFB810;
+    border-color: #EFB810;
+    display: flex;
+    align-items: center;
+}
+
+.footer-add-icon {
+    font-size: x-large;
 }
