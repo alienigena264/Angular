@@ -21,6 +21,11 @@
     /* Agrega el espaciado deseado */
 }
 
+.carousel-img {
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover;
+}
+
 
 .btn-reserva:hover {
     background-color: #00B5C0;
