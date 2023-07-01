@@ -41,59 +41,100 @@
                 <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
             </ol>
         </nav>
-        <div class="table-responsive">
-            <table class="table table-striped">
-                <thead class="table-dark">
-                    <td>Calidad</td>
-                    <td>Santa Marta</td>
-                    <td>Monica</td>
-                    <td>Colsubsidio</td>
-                    <td>Buenos asires</td>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><i class="bi bi-star-fill"></i></td>
-                        <td>$120</td>
-                        <td>$192</td>
-                        <td>$150</td>
-                        <td>$60</td>
-                    </tr>
-                    <tr>
-                        <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></td>
-                        <td>$220</td>
-                        <td>$292</td>
-                        <td>$250</td>
-                        <td>$260</td>
-                    </tr>
-                    <tr>
-                        <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
-                        </td>
-                        <td>$320</td>
-                        <td>$392</td>
-                        <td>$350</td>
-                        <td>$360</td>
-                    </tr>
-                    <tr>
-                        <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></td>
-                        <td>$420</td>
-                        <td>$492</td>
-                        <td>$450</td>
-                        <td>$460</td>
-                    </tr>
-                    <tr>
-                        <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i></td>
-                        <td>$520</td>
-                        <td>$592</td>
-                        <td>$550</td>
-                        <td>$560</td>
-                    </tr>
-                </tbody>
-            </table>
+
+        <ul class="nav nav-pills" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="compara-tab" data-bs-toggle="pill" href="#compara" role="tab"
+                    aria-controls="compara" aria-selected="true">Compara</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tarjetas-tab" data-bs-toggle="pill" href="#Tarjetas" role="tab"
+                    aria-controls="tarjetas" aria-selected="false">Tarjetas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="comentarios-tab" data-bs-toggle="pill" href="#comentarios" role="tab"
+                    aria-controls="comentarios" aria-selected="false">Comentarios</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+                <!-- Tab content goes here -->
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="table-dark">
+                            <td>Calidad</td>
+                            <td>Santa Marta</td>
+                            <td>Monica</td>
+                            <td>Colsubsidio</td>
+                            <td>Buenos asires</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="bi bi-star-fill"></i></td>
+                                <td>$120</td>
+                                <td>$192</td>
+                                <td>$150</td>
+                                <td>$60</td>
+                            </tr>
+                            <tr>
+                                <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></td>
+                                <td>$220</td>
+                                <td>$292</td>
+                                <td>$250</td>
+                                <td>$260</td>
+                            </tr>
+                            <tr>
+                                <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </td>
+                                <td>$320</td>
+                                <td>$392</td>
+                                <td>$350</td>
+                                <td>$360</td>
+                            </tr>
+                            <tr>
+                                <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></td>
+                                <td>$420</td>
+                                <td>$492</td>
+                                <td>$450</td>
+                                <td>$460</td>
+                            </tr>
+                            <tr>
+                                <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i></td>
+                                <td>$520</td>
+                                <td>$592</td>
+                                <td>$550</td>
+                                <td>$560</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Tab content goes here -->
+            </div>
+            <div class="tab-pane fade" id="Tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+                <!-- Tab content goes here -->
+                <div class="d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header" style="background-color: blue; color: white;">
+                            Tarjetas aceptadas
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Tarjeta básica </li>
+                            <li class="list-group-item">Tarjeta VIP</li>
+                            <li class="list-group-item">Tarjeta Black</li>
+                        </ul>
+                    </div>
+                </div>
+            <!-- Tab content goes here -->
+            </div>
+            <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+                <!-- Tab content goes here -->
+            </div>
         </div>
+
     </div>
 
     <footer class="footer">
