@@ -45,7 +45,9 @@
     font-weight: bold;
     margin-left: 1rem;
 }
-
+.modal-content {
+    background-color: white;
+}
 .breadcrumb-no-link.active {
     margin-right: 1rem;
 }

@@ -79,13 +79,16 @@
         </nav>
         <div class="row">
             <div class="col-sm-4">
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="multi-collapse1">¿Como funciona?</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona"
+                    aria-expanded="false" aria-controls="multi-collapse1">¿Como funciona?</button>
             </div>
             <div class="col-sm-4">
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="multi-collapse1">¿Como funciona?</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva"
+                    aria-expanded="false" aria-controls="multi-collapse1">¿Como funciona?</button>
             </div>
             <div class="col-sm-4">
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multi-collapse1">¿Como funciona?</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago"
+                    aria-expanded="false" aria-controls="multi-collapse1">¿Como funciona?</button>
             </div>
         </div>
         <div class="d-flex">
@@ -118,14 +121,16 @@
                     <p class="card-text">Hotel ubicado en el centro de barcelona a pocos metros de la playa</p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva">Reservar<i
+                    <button class="btn btn-primary btn-reserva" data-bs-toggle="popover" title="Grandes ofertas"
+                        data-bs-trigger="focus" data-content="Consulta los precios" data-placement="bottom" >Reservar<i
                             class="bi bi-plus footer-add-icon"></i></button>
                 </div>
             </div>
 
             <div class=" card hotel-container d-flex flex-column justify-content-between m-2">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel Buenos aires</h5>
+                    <h5 class="card-title" data-bs-toggle="tooltip" data-placement="bottom" title="Queda poco tiempo">
+                        Hotel Buenos aires</h5>
                     <h6 class="card-subtitle text-muted">Argentina</h6>
                     <img class="card-img-top img-fluid" src="Images/messi.webp" alt="hotel img">
                     <p>Hotel ubicado en pleno centro </p>
@@ -157,6 +162,8 @@
                     <h6 class="card-subtitle text-muted">Brasil</h6>
                     <img class="card-img-top img-fluid" src="Images/brasil.jpg" alt="hotel img">
                     <p>Hotel ubicado en pleno centro a pocos metros de la playa</p>
+                    <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto<i
+                            class="bi bi-plus footer-add-icon"></i></button>
                 </div>
                 <div>
                     <button class="btn btn-primary btn-reserva">Reservar<i
@@ -197,16 +204,46 @@
             </div>
         </div>
         <div class="progress" style="height: 5px;">
-            <div class="progress-bar bg-color-principal" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
-                aria-valuemax="100"></div>
+            <div class="progress-bar bg-color-principal" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <h4>
             Diferentes barras
         </h4>
         <div class="progress" style="height: 20px;">
-            <div class="progress-bar bg-color-secundario" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
-                aria-valuemax="100"></div>
+            <div class="progress-bar bg-color-secundario" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100"></div>
         </div>
+
+        <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contacto con el hotel</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Tu email</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mesagge-text" class="col-form-label">Mensaje</label>
+                                <textarea type="text" class="form-control" id="mesagge-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </div>
 
@@ -246,6 +283,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <!-- Funcion para los tooltips/lo que aparece cuando se deja el mouse encima-->
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
 
 
 </body>
