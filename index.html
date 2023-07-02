@@ -77,21 +77,31 @@
                 <li class="breadcrumb-item breadcrumb-no-link active mr-2" aria-current="page">Home</li>
             </ol>
         </nav>
-
-        <div class="d-flex">
+        <div class="row">
             <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="multi-collapse1">¿Como funciona?</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="multi-collapse1">¿Como funciona?</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multi-collapse1">¿Como funciona?</button>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="col-sm-4 collapse multi-collapse" id="funciona">
                 <p>
                 <h3>¿Como Funciona?</h3>
                 <p>Busca los hoteles de acuerdo a tu preferencia.♥</p>
                 </p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 collapse multi-collapse" id="reserva">
                 <p>
                 <h3>¿Donde puedo reservar?</h3>
                 <p>Elija la ciudad de su preferencia y realiza la reserva deacuerdoa sus datos</p>
                 </p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 collapse multi-collapse" id="pago">
                 <p>
                 <h3>¿Como pago?</h3>
                 <p>Utiliza tu tarjeta fovorita</p>
