@@ -190,8 +190,8 @@
                     <h6 class="card-subtitle text-muted">Brasil</h6>
                     <img class="card-img-top img-fluid" src="Images/brasil.jpg" alt="hotel img">
                     <p>Hotel ubicado en pleno centro a pocos metros de la playa</p>
-                    <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto<i
-                            class="bi bi-plus footer-add-icon"></i></button>
+                    <button class="btn btn-outline-success" data-toggle="modal" data-target="#contactoModal"
+                        id="contactoBtn">Contacto<i class="bi bi-plus footer-add-icon"></i></button>
                 </div>
                 <div>
                     <button class="btn btn-primary btn-reserva">Reservar<i
@@ -243,7 +243,7 @@
                 aria-valuemin="0" aria-valuemax="100"></div>
         </div>
 
-        <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        <div class="modal fade" id="contactoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -329,7 +329,29 @@
         $(function () {
             $('.carousel').carousel({
                 interval: 100
-            })
+            });
+            //Con esto podemos hacer uso de los eventos/ listeners
+            $('#contactoModal').on('show.bs.modal', function(e){
+                console.log("El modal se esta mostrando")
+                $('#contactoBtn').removeClass('btn-outline-success');
+                $('#contactoBtn').addClass('btn-primary');
+                $('#contactoBtn').prop('disable', true);
+            });
+
+            $('#contactoModal').on('shown.bs.modal', function(e){
+                console.log("El modal se mostro")
+            });
+
+            $('#contactoModal').on('hide.bs.modal', function(e){
+                console.log("El modal se esta ocultando")
+                $('#contactoBtn').removeClass('btn-primary');
+                $('#contactoBtn').addClass('btn-outline-success');
+                $('#contactoBtn').prop('disable', false);
+            });
+
+            $('#contactoModal').on('hidden.bs.modal', function(e){
+                console.log("El modal se oculto")
+            });
         })
     </script>
 
