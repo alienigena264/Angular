@@ -1,0 +1,109 @@
+$orange:#EFB810;
+$blue:#00B5C0;
+@mixin margenes($top, $bottom){
+    top:$top;
+    bottom:$bottom;
+}
+
+.jumbotron {
+    background-color: $blue;
+    color: black;
+    margin-top: 50px;
+    height: 125px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    padding: 10px 10px 0 10px;
+    background-color: $blue;
+    @include margenes(10,0 )
+}
+
+.hotel-container {
+    
+    flex: 1 200px;
+    /* Agrega el espaciado deseado */
+}
+
+.carousel-img {
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover;
+}
+
+
+.btn-reserva:hover {
+    background-color: $blue;
+    color: black;
+    border-color: $blue;
+}
+
+.breadcrumb-Custom {
+    background-color: lightgray;
+    @include margenes(10,0 );
+    border-radius: 5px;
+}
+
+.breadcrumb-no-link>a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+.modal-content {
+    background-color: white;
+}
+.breadcrumb-no-link.active {
+    margin-right: 1rem;
+}
+
+.footer-addres-icon{
+    padding-right: 10px;
+}
+
+.btn-reserva {
+    width: 100%;
+    background-color: $orange;
+    border-color: $orange;
+    display: flex;
+    align-items: center;
+}
+
+.footer-add-icon {
+    font-size: x-large;
+}
+
+.btn-enviar{
+        background-color: $blue;
+        border-color: $blue;
+        display: flex;
+        align-items: center;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: gray;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.close:hover {
+    color: #ff0000;
+    opacity: 0.8;
+}
+
+.bg-color-principal{
+    background-color: $blue;
+}
+
+.bg-color-secundario{
+    background-color: $orange;
+}
+.tab-content{
+    padding-top: 10px;
+}
