@@ -1,14 +1,15 @@
-$orange:#EFB810;
-$blue:#66c000;
-@mixin margenes($top, $bottom){
-    top:$top;
-    bottom:$bottom;
+@orange: #EFB810;
+@blue: #00B5C0;
+
+.margenes(@top: 0px, @bottom: 0px) {
+    margin-top: @top;
+    margin-top: @bottom;
 }
 
 .jumbotron {
-    background-color: $blue;
+    background-color: @blue;
     color: black;
-    margin-top: 50px;
+    .margenes(50);
     height: 125px;
     text-align: left;
     display: flex;
@@ -17,31 +18,30 @@ $blue:#66c000;
 
 .footer {
     padding: 10px 10px 0 10px;
-    background-color: $blue;
-    @include margenes(10,0 )
+    background-color: @blue;
+    .margenes(10, 0)
 }
 
 .hotel-container {
-    
     flex: 1 200px;
     /* Agrega el espaciado deseado */
 }
 
 .carousel-img {
-    height: 200px; /* Ajusta la altura según tus necesidades */
+    height: 200px;
+    /* Ajusta la altura según tus necesidades */
     object-fit: cover;
 }
 
-
 .btn-reserva:hover {
-    background-color: $blue;
+    background-color: @blue;
     color: black;
-    border-color: $blue;
+    border-color: @blue;
 }
 
 .breadcrumb-Custom {
     background-color: lightgray;
-    @include margenes(10,0 );
+    .margenes(10,0);
     border-radius: 5px;
 }
 
@@ -51,21 +51,23 @@ $blue:#66c000;
     font-weight: bold;
     margin-left: 1rem;
 }
+
 .modal-content {
     background-color: white;
 }
+
 .breadcrumb-no-link.active {
     margin-right: 1rem;
 }
 
-.footer-addres-icon{
+.footer-addres-icon {
     padding-right: 10px;
 }
 
 .btn-reserva {
     width: 100%;
-    background-color: $orange;
-    border-color: $orange;
+    background-color: @orange;
+    border-color: @orange;
     display: flex;
     align-items: center;
 }
@@ -74,11 +76,11 @@ $blue:#66c000;
     font-size: x-large;
 }
 
-.btn-enviar{
-        background-color: $blue;
-        border-color: $blue;
-        display: flex;
-        align-items: center;
+.btn-enviar {
+    background-color: @blue;
+    border-color: @blue;
+    display: flex;
+    align-items: center;
 }
 
 .close {
@@ -97,13 +99,14 @@ $blue:#66c000;
     opacity: 0.8;
 }
 
-.bg-color-principal{
-    background-color: $blue;
+.bg-color-principal {
+    background-color: @blue;
 }
 
-.bg-color-secundario{
-    background-color: $orange;
+.bg-color-secundario {
+    background-color: @blue;
 }
-.tab-content{
+
+.tab-content {
     padding-top: 10px;
 }

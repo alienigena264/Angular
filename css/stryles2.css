@@ -1,70 +1,70 @@
-@charset "UTF-8";
 .jumbotron {
-  background-color: #66c000;
+  background-color: #00B5C0;
   color: black;
-  margin-top: 50px;
+  margin-top: 50;
+  margin-top: 0px;
   height: 125px;
   text-align: left;
   display: flex;
-  align-items: center; }
-
+  align-items: center;
+}
 .footer {
   padding: 10px 10px 0 10px;
-  background-color: #66c000;
-  top: 10;
-  bottom: 0; }
-
+  background-color: #00B5C0;
+  margin-top: 10;
+  margin-top: 0;
+}
 .hotel-container {
   flex: 1 200px;
-  /* Agrega el espaciado deseado */ }
-
+  /* Agrega el espaciado deseado */
+}
 .carousel-img {
   height: 200px;
   /* Ajusta la altura según tus necesidades */
-  object-fit: cover; }
-
+  object-fit: cover;
+}
 .btn-reserva:hover {
-  background-color: #66c000;
+  background-color: #00B5C0;
   color: black;
-  border-color: #66c000; }
-
+  border-color: #00B5C0;
+}
 .breadcrumb-Custom {
   background-color: lightgray;
-  top: 10;
-  bottom: 0;
-  border-radius: 5px; }
-
+  margin-top: 10;
+  margin-top: 0;
+  border-radius: 5px;
+}
 .breadcrumb-no-link > a {
   text-decoration: none;
   color: inherit;
   font-weight: bold;
-  margin-left: 1rem; }
-
+  margin-left: 1rem;
+}
 .modal-content {
-  background-color: white; }
-
+  background-color: white;
+}
 .breadcrumb-no-link.active {
-  margin-right: 1rem; }
-
+  margin-right: 1rem;
+}
 .footer-addres-icon {
-  padding-right: 10px; }
-
+  padding-right: 10px;
+}
 .btn-reserva {
   width: 100%;
   background-color: #EFB810;
   border-color: #EFB810;
   display: flex;
-  align-items: center; }
-
+  align-items: center;
+}
 .footer-add-icon {
-  font-size: x-large; }
-
+  font-size: x-large;
+}
 .btn-enviar {
-  background-color: #66c000;
-  border-color: #66c000;
+  background-color: #00B5C0;
+  border-color: #00B5C0;
   display: flex;
-  align-items: center; }
-
+  align-items: center;
+}
 .close {
   position: absolute;
   top: 0;
@@ -73,17 +73,18 @@
   font-weight: 500;
   color: gray;
   background-color: transparent;
-  border-color: transparent; }
-
+  border-color: transparent;
+}
 .close:hover {
   color: #ff0000;
-  opacity: 0.8; }
-
+  opacity: 0.8;
+}
 .bg-color-principal {
-  background-color: #66c000; }
-
+  background-color: #00B5C0;
+}
 .bg-color-secundario {
-  background-color: #EFB810; }
-
+  background-color: #00B5C0;
+}
 .tab-content {
-  padding-top: 10px; }
+  padding-top: 10px;
+}
