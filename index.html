@@ -302,7 +302,7 @@
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- build:js dist/index.js -->
+    <!-- build:js js/main.js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -326,35 +326,7 @@
         })
     </script>
     <!-- Cambiar la velocidad de desplazamiento de los carrousels-->
-    <script>
-        $(function () {
-            $('.carousel').carousel({
-                interval: 2000
-            });
-            //Con esto podemos hacer uso de los eventos/ listeners
-            $('#contactoModal').on('show.bs.modal', function(e){
-                console.log("El modal se esta mostrando")
-                $('#contactoBtn').removeClass('btn-outline-success');
-                $('#contactoBtn').addClass('btn-primary');
-                $('#contactoBtn').prop('disable', true);
-            });
-
-            $('#contactoModal').on('shown.bs.modal', function(e){
-                console.log("El modal se mostro")
-            });
-
-            $('#contactoModal').on('hide.bs.modal', function(e){
-                console.log("El modal se esta ocultando")
-                $('#contactoBtn').removeClass('btn-primary');
-                $('#contactoBtn').addClass('btn-outline-success');
-                $('#contactoBtn').prop('disable', false);
-            });
-
-            $('#contactoModal').on('hidden.bs.modal', function(e){
-                console.log("El modal se oculto")
-            });
-        })
-    </script>
+    <script  src="js/index.js"></script>
     <!-- endbuild -->
 
 </body>

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .jumbotron {
-  background-color: #66c000;
+  background-color: #66c08A;
   color: black;
   margin-top: 50px;
   height: 125px;
@@ -10,7 +10,7 @@
 
 .footer {
   padding: 10px 10px 0 10px;
-  background-color: #66c000;
+  background-color: #66c08A;
   top: 10;
   bottom: 0; }
 
@@ -24,9 +24,9 @@
   object-fit: cover; }
 
 .btn-reserva:hover {
-  background-color: #66c000;
+  background-color: #66c08A;
   color: black;
-  border-color: #66c000; }
+  border-color: #66c08A; }
 
 .breadcrumb-Custom {
   background-color: lightgray;
@@ -60,8 +60,8 @@
   font-size: x-large; }
 
 .btn-enviar {
-  background-color: #66c000;
-  border-color: #66c000;
+  background-color: #66c08A;
+  border-color: #66c08A;
   display: flex;
   align-items: center; }
 
@@ -80,7 +80,7 @@
   opacity: 0.8; }
 
 .bg-color-principal {
-  background-color: #66c000; }
+  background-color: #66c08A; }
 
 .bg-color-secundario {
   background-color: #EFB810; }
